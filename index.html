@@ -1,0 +1,168 @@
+<!--Partial reference:
+https://medium.freecodecamp.org/learn-bootstrap-4-in-30-minute-by-building-a-landing-page-website-guide-for-beginners-f64e03833f33
+http://youmightnotneedjquery.com/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!--Font Awesome CSS (external link)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--Google Fonts API-->
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Rubik" rel="stylesheet">
+
+    <title>Alan Vuong's Webpage</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top" id="navbar">
+        <a class="navbar-brand" href="/">AltiV</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-value="about">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-value="portfolio">Portfolio</a>
+            </li>
+            <!--<li class="nav-item">
+                <a class="nav-link" href="#" data-value="contact">Contact Me</a>
+            </li>-->
+        </ul>
+
+        <div class="progress-custom fixed-top" id="progress">
+            <div class="progress-bar-custom"></div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="jumbotron-text">
+            <h1>Alan Vuong</h1>
+            <p>Welcome to my website.</p>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+
+        <h1>About Me</h1>
+        <p>My name is Alan Vuong, and I am a computer programmer currently studying at Seneca College for an Advanced
+            Diploma. I have also graduated from the University of Toronto with an undergraduate degree in Mechanical
+            Engineering. I have proficiency in various database, software, and web techologies, and am always willing
+            to learn more about the software industry.</p>
+            <p>Feel free to send me an e-mail at vuong.alan.t@gmail.com if you have any questions or would just like to chat!</p>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <img class="img-fluid" src="images/profile-picture.jpg">
+                <span class="text-justify">Giving off that evil look.</span>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <img class="img-fluid" src="images/arduino-keyboard.jpg">
+                <span class="text-justify">An old Arduino Keyboard project.</span>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <img class="img-fluid" src="images/ceiling-fans.jpg">
+                <span class="text-justify">Assembling ceiling fans for display.</span>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container portfolio" id="portfolio">
+        <h1>Portfolio</h1>
+        <p>Here is a list of some small projects I have worked on recently, whether through academia or personal interests.</p>
+        <p>If you are interested, my resumé can be viewed <a href="files/Resumé.pdf" target="_blank">here.</a> (Last updated January
+            4th, 2019)</p>
+
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="https://rocky-ravine-86840.herokuapp.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+            </div>
+        </div>
+
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Assembly Line Textual Simulation Application</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Sample Registration Form</h4>
+                <p class="card-text">A comprehensive registration form sample created for an academic assignment. This form utilizes many features of HTML forms and validation on client-side, and sends the information as JSON data to httpbin.org, a simple HTTP request & response service.</p>
+                <a href="https://altivu.github.io/registration-form/" target="_blank" class="btn btn-primary">Visit Website</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Experience Calculator - Brave Frontier</h4>
+                <p class="card-text">One of my first public web projects that still sees some usage today. This is an experience calculator for a mobile game, where the user inputs their current and desired scenarios, and determines how many times they will have to complete a certain stage in order to reach their goals. The website utilizes standard HTML/CSS/Javascript, with many preset fields to minimize manual data insertion and potential errors.</p>
+                <a href="https://altivu.github.io/EXPCalc/" target="_blank" class="btn btn-primary">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div class="container contact" id="contact">
+        <h1>Contact Me</h1>
+        <p>Feel free to send me an e-mail at vuong.alan.t@gmail.com if you have any questions or would just like to
+            chat!</p>
+
+        <form onsubmit="return false;">
+            <div class="form-group">
+                <label for="username">Name:</label>
+                <input type="text" class="form-control" id="username" name="username">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" id="comment" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-secondary disabled" disabled>Form currently not functional</button>
+        </form>
+    </div>
+    -->
+
+    <footer class="container-fluid text-center">
+        <div class="footer-social">
+            <a href="mailto:vuong.alan.t@gmail.com" class="fa fa-envelope" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/alan-vuong-08579860/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://twitter.com/alti_v" class="fa fa-twitter" target="_blank"></a>
+
+            <!--Probably not professional to include but I have these as well
+                <a href="/" class="fa fa-facebook"></a>
+                <a href="/" class="fa fa-whatsapp"></a>
+                -->
+        </div>
+        <div class="footer-copyright">©2019 - Alan Vuong</div>
+    </footer>
+
+    <script type="text/javascript" src='js/jquery-3.3.1.js'></script>
+    <script type="text/javascript" src='js/main.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+* {
+    font-family: 'Hammersmith One', 'Rubik', sans-serif;
+}
+
+.navbar {
+    max-height: 72px;
+}
+
+.navbar, footer {
+    background: silver;
+}
+
+.navbar-brand {
+    color: purple;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    text-shadow:
+    -1px -1px 0 grey,
+    1px -1px 0 grey,
+    -1px 1px 0 grey,
+    1px 1px 0 grey;
+    transition: font-size 0.1s;
+}
+
+.navbar-brand:hover {
+    font-size: 2.25em;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1.2em;
+}
+
+.nav-link:hover {
+    color: grey;
+}
+
+.jumbotron {
+    margin-top: 80px;
+    /*background: url("../images/mini-yo-we.jpg") center 39%;*/
+    background: url("../images/lecture-room.jpg") center 35%;
+    background-size: cover;
+}
+
+.jumbotron-text {
+    color: white;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+/* Placeholder for when the website height is too short
+.container {
+    min-height: 100vh;
+}
+*/
+.progress-custom {
+    height: 8px;
+    background: #ccc;
+}
+
+.progress-bar-custom {
+    height: 8px;
+    background: red;
+    width: 0%;
+}
+
+footer {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.fa {
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 50%;
+    color: white;
+  }
+
+.fa:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.fa-envelope {
+    background: #C71610;
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-whatsapp {
+    background: #25d366;
+}
