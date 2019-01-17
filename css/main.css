@@ -66,6 +66,10 @@
     width: 0%;
 }
 
+.btn-primary {
+    background: red;
+}
+
 footer {
     padding: 1rem;
     margin-top: 1rem;
