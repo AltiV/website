@@ -17,27 +17,27 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132977866-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'UA-132977866-1');
+        gtag('config', 'UA-132977866-1');
     </script>
-    
+
     <title>Alan Vuong's Webpage</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-sm fixed-top" id="navbar">
         <a class="navbar-brand" href="/">AltiV</a>
-        <ul class="navbar-nav ml-auto">
+        <!-- <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#" data-value="about">About Me</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" data-value="portfolio">Portfolio</a>
             </li>
-        </ul>
+        </ul> -->
 
         <div class="progress-custom fixed-top" id="progress">
             <div class="progress-bar-custom"></div>
@@ -87,8 +87,23 @@
 
         <div class="card">
             <div class="card-body">
+                <h4 class="card-title">Angular API Demo (Employees and Positions)</h4>
+                <p class="card-text">Created for an academic assignment, this application builds upon the existing
+                    knowledge gained while creating the Employee Database and Image Upload System, and presents it using
+                    the Angular web development platform. The application is deployed
+                    on the Heroku PaaS.</p>
+                <a href="http://web422-final.herokuapp.com/" target="_blank" class="btn btn-primary">Visit
+                    Website</a>
+                <a href=" https://github.com/AltiV/web422-final" target="_blank" class="btn btn-primary">Visit
+                    Github</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
                 <h4 class="card-title">Employee Database and Image Upload System</h4>
-                <p class="card-text">Created for an academic assignment, this application utilizes many current web techologies such as Node.js and various
+                <p class="card-text">Created for an academic assignment, this application utilizes many current web
+                    techologies such as Node.js and various
                     packages, PostgreSQL, and MongoDB to allow the user to store and view hypothetical employee and
                     department data, as well as a basic image gallery. You are required to register to view most of the
                     functionality, but signing up is extremely quick and straightforward. The application is deployed

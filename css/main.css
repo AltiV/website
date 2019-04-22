@@ -7,11 +7,11 @@
 }
 
 .navbar, footer {
-    background: silver;
+    background: black;
 }
 
 .navbar-brand {
-    color: purple;
+    color: black;
     font-size: 2em;
     letter-spacing: 0.2em;
     text-shadow:
@@ -24,6 +24,7 @@
 
 .navbar-brand:hover {
     font-size: 2.25em;
+    color: black;
 }
 
 .nav-link {
@@ -73,6 +74,10 @@
 footer {
     padding: 1rem;
     margin-top: 1rem;
+}
+
+.footer-copyright {
+    color: white;
 }
 
 .fa {
